@@ -1,6 +1,6 @@
-import logo from "../logo.svg";
-import ellipse from "../ellipse.svg";
-import "../App.css";
+import logo from "../../icons/logo.svg";
+import ellipse from "../../icons/ellipse.svg";
+import "./Header.css";
 import { useSelector } from "react-redux";
 
 function Header() {
@@ -8,8 +8,8 @@ function Header() {
 
   return (
     <div className={`header ${isLogged ? "logged" : ""} `}>
-      {isLogged ? null : <img src={ellipse} alt='' />}
-      <img src={logo} className="header__logo" alt='' />
+      {isLogged ? null : <img src={ellipse} alt="" />}
+      <img src={logo} className="header__logo" alt="" />
       <div className="header__info">Корпоративная информационная система</div>
       <div className={`header__greeting ${isLogged ? "logged" : ""} `}>
         Добрый день, Владислав!

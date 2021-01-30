@@ -1,10 +1,11 @@
-import "../App.css";
-import TextField from "./TextField";
-import Title from "./Title";
-import EmptyButton from "./EmptyButton";
-import FilledButton from "./FilledButton";
+import "./LoginForm.css";
+import TextField from "../TextField/TextField";
+import Title from "../Title/Title";
+import EmptyButton from "../EmptyButton/EmptyButton";
+import FilledButton from "../FilledButton/FilledButton";
 import { useDispatch, useSelector } from "react-redux";
-import { loginCheckCreator, moveLoginCreator } from "../redux/reducer";
+import { loginCheckCreator, moveLoginCreator } from "../../redux/reducer";
+
 
 function LoginForm() {
   const isMove = useSelector(state => state.isMoveLogin)
@@ -14,7 +15,7 @@ function LoginForm() {
   const onLoginHandler = (e) => {
     e.preventDefault();
 
-    if (e.nativeEvent.submitter.className === "login__btn") {
+    if (e.nativeEvent.submitter.className.trim() === "login__btn") {
       if (e.target[0].value.trim() && e.target[2].value.trim()) {
         dispatch(
           loginCheckCreator([
@@ -23,7 +24,7 @@ function LoginForm() {
           ])
         );
       }
-    } else if (e.nativeEvent.submitter.className === "forget-pas__btn") {
+    } else if (e.nativeEvent.submitter.className.trim() === "forget-pas__btn") {
       dispatch(moveLoginCreator())
     }
   };
@@ -46,6 +47,7 @@ function LoginForm() {
           classType="password"
           textType="text"
         />
+        <div className='login__bottom-line'></div>
         <EmptyButton
           classType="forget-pas"
           text="Не помню пароль"

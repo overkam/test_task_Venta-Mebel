@@ -1,0 +1,40 @@
+.forget__form {
+  position: absolute;
+  width: 347px;
+  height: 266px;
+  left: 45px;
+  top: 498px;
+
+  transform: translate(0, 0);
+  transition: transform 1000ms;
+}
+.forget__form.move {
+  transform: translate(0, -308px);
+}
+.warning {
+  margin-top: 110px;
+}
+.warning__message {
+  position: absolute;
+  width: 304px;
+  height: 30px;
+  left: 42px;
+  top: 110px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #949494;
+}
+.forget__bottom-line {
+  position: absolute;
+  width: 343px;
+  height: 1px;
+  left: 0px;
+  top: 150px;
+
+  background: #f2f2f2;
+}

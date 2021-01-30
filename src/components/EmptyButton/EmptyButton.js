@@ -1,4 +1,4 @@
-import '../App.css'
+import './EmptyButton.css'
 
 function EmptyButton (props) {
   return <button className={`${props.classType}__btn`} >{props.text}</button>

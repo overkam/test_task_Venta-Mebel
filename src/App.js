@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/Header";
-import LoginForm from "./components/LoginForm";
-import ForgetForm from "./components/ForgetForm";
+import Header from "./components/Header/Header";
+import LoginForm from "./components/LoginForm/LoginForm";
+import ForgetForm from "./components/ForgetForm/ForgetForm";
 import { useSelector } from "react-redux";
 
 function App() {

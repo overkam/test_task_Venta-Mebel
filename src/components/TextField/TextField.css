@@ -1,0 +1,135 @@
+.form__login,
+.form__login-valid {
+  position: absolute;
+  width: 346px;
+  height: 54px;
+  left: calc(50% - 346px / 2 + 0.5px);
+  top: 38px;
+  border: none;
+
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+.form__login:hover,
+.clear__btn:hover,
+.form__password:hover {
+  cursor: pointer;
+}
+.form__login-clicked {
+  position: absolute;
+  width: 346px;
+  height: 54px;
+  left: calc(50% - 346px / 2 + 0.5px);
+  top: 38px;
+
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.form__login-label,
+.form__password-label {
+  position: absolute;
+  height: 16px;
+  left: 15px;
+  top: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #8c8c8c;
+}
+
+.form__login-label-clicked,
+.form__login-label-valid,
+.form__password-label-clicked,
+.form__password-label-valid {
+  position: absolute;
+  height: 14px;
+  left: 15px;
+  top: 9px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #8c8c8c;
+}
+.form__login-email,
+.form__password-text {
+  padding: 0;
+  position: absolute;
+  width: 280px;
+  height: 16px;
+  left: 15px;
+  top: 28px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  background-color: transparent;
+}
+.form__login-email:focus,
+.form__password-text:focus,
+.clear__btn:focus {
+  outline: none;
+}
+.form__login-email::placeholder,
+.form__password-text::placeholder {
+  color: #d9d9d9;
+}
+
+/*Пароль*/
+.form__password,
+.form__password-valid {
+  position: absolute;
+  width: 346px;
+  height: 54px;
+  left: calc(50% - 346px / 2 + 0.5px);
+  top: 117px;
+  border: none;
+
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+.form__password-clicked {
+  position: absolute;
+  width: 346px;
+  height: 54px;
+  left: calc(50% - 346px / 2 + 0.5px);
+  top: 117px;
+
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.clear__btn {
+  border: none;
+  margin-top: 16px;
+  margin-left: 311px;
+  padding: 0;
+  background-color: transparent;
+}
+.form__error-message {
+  position: absolute;
+  height: 14px;
+  left: 1px;
+  top: 56px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #eb5757;
+}
+.invalid {
+  border: 1px solid #eb5757;
+}

@@ -1,0 +1,46 @@
+.forget-pas__btn {
+  border: none;
+  padding: 0;
+  position: absolute;
+  width: 110px;
+  height: 15px;
+  left: calc(50% - 110px / 2 - 87.5px);
+  top: 239px;
+  background-color: #fff;
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #949494;
+}
+.forget-pas__btn:hover,
+.back__btn:hover {
+  color: #10a7a5;
+}
+.back__btn {
+  position: absolute;
+  width: 39px;
+  height: 15px;
+  left: calc(50% - 39px / 2 - 80.5px);
+  top: 193px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+
+  color: #949494;
+}
+.back__btn:focus,
+.forget-pas__btn:focus {
+  outline: none;
+}

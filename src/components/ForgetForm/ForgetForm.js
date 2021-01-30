@@ -1,11 +1,11 @@
-import "../App.css";
-import TextField from "./TextField";
-import warning from "../warning.svg";
-import Title from "./Title";
-import EmptyButton from "./EmptyButton";
-import FilledButton from "./FilledButton";
+import "./ForgetForm.css";
+import TextField from "../TextField/TextField";
+import Title from "../Title/Title";
+import EmptyButton from "../EmptyButton/EmptyButton";
+import FilledButton from "../FilledButton/FilledButton";
+import warning from "../../icons/warning.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { moveLoginCreator } from "../redux/reducer";
+import { moveLoginCreator } from "../../redux/reducer";
 
 function ForgetForm() {
 
@@ -36,6 +36,7 @@ function ForgetForm() {
           Пароль будет отправлен на электронную почту, к которой привязана
           учетная запись.
         </div>
+        <div className='forget__bottom-line'></div>
         <EmptyButton classType="back" text="Назад" type="submit" />
         <FilledButton
           classType="recover"

@@ -1,0 +1,22 @@
+.form {
+  position: absolute;
+  width: 347px;
+  height: 401px;
+  left: 45px;
+  top: 190px;
+
+  transform: translate(0, 0);
+  transition: transform 1000ms;
+}
+.form.move {
+  transform: translate(0, -401px);
+}
+.login__bottom-line {
+  position: absolute;
+  width: 343px;
+  height: 1px;
+  left: 2px;
+  top: 195px;
+
+  background: #f2f2f2;
+}
